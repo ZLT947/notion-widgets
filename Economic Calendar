@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingView Widget</title>
+  <style>
+    .widget-frame {
+      border: 5px solid blue; /* This adds the blue frame */
+      width: fit-content;
+      margin: auto;
+    }
+    /* Hide the copyright div containing the "Track all markets" link */
+    .tradingview-widget-copyright {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Blue Frame Container -->
+  <div class="widget-frame">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "width": "400",
+        "height": "550",
+        "locale": "en",
+        "importanceFilter": "-1,0,1",
+        "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+</body>
+</html>
